@@ -2,6 +2,7 @@ package com.management.servicebe.search.application;
 
 import com.management.servicebe.dto.FoodDto;
 import com.management.servicebe.food.application.FoodService;
+import java.util.Collections;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
@@ -16,6 +17,10 @@ public class SearchFoodService {
     private final FoodService foodService;
 
     public List<FoodDto> searchFoods(String searchWord, Pageable pageable) {
+        if (searchWord == null || searchWord.isBlank()) {
+            return Collections.emptyList();
+        }
+
         return foodService.searchFoods(searchWord, pageable);
     }
 }
