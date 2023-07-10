@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @RequiredArgsConstructor
 @Service
-public class FoodServiceImpl implements FoodService {
+public class SearchingFoodServiceImpl implements SearchingFoodService {
 
     private final FoodRepository foodRepository;
 

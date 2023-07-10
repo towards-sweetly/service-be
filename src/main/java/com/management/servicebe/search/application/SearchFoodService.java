@@ -1,7 +1,7 @@
 package com.management.servicebe.search.application;
 
 import com.management.servicebe.dto.FoodDto;
-import com.management.servicebe.food.application.FoodService;
+import com.management.servicebe.food.application.SearchingFoodService;
 import java.util.Collections;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
@@ -14,13 +14,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class SearchFoodService {
 
-    private final FoodService foodService;
+    private final SearchingFoodService searchingFoodService;
 
     public List<FoodDto> searchFoods(String searchWord, Pageable pageable) {
         if (searchWord == null || searchWord.isBlank()) {
             return Collections.emptyList();
         }
 
-        return foodService.searchFoods(searchWord, pageable);
+        return searchingFoodService.searchFoods(searchWord, pageable);
     }
 }

@@ -27,10 +27,10 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 
 @ExtendWith(MockitoExtension.class)
-class FoodServiceImplTest {
+class SearchingFoodServiceImplTest {
 
     @InjectMocks
-    private FoodServiceImpl sut;
+    private SearchingFoodServiceImpl sut;
 
     @Mock
     private FoodRepository foodRepository;

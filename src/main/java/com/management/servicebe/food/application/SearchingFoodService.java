@@ -4,6 +4,6 @@ import com.management.servicebe.dto.FoodDto;
 import java.util.List;
 import org.springframework.data.domain.Pageable;
 
-public interface FoodService {
+public interface SearchingFoodService {
     List<FoodDto> searchFoods(String searchWord, Pageable pageable);
 }
