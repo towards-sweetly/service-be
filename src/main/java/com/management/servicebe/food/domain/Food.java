@@ -14,7 +14,7 @@ public class Food {
 
     @EqualsAndHashCode.Include
     @ToString.Include
-    private String id;
+    private Long id;
     @ToString.Include
     private final String name;
     @ToString.Include
@@ -30,7 +30,7 @@ public class Food {
     private final BigDecimal saturatedFattyAcidsGram;
     private final BigDecimal transFattyAcidsGram;
 
-    public Food(String id, String name, Category category, BigDecimal servingSizeGram, BigDecimal caloriesKcal,
+    public Food(Long id, String name, Category category, BigDecimal servingSizeGram, BigDecimal caloriesKcal,
                 BigDecimal carbohydratesGram, BigDecimal proteinGram, BigDecimal fatGram, BigDecimal sugarsGram,
                 BigDecimal sodiumMilliGram, BigDecimal cholesterolMilliGram, BigDecimal saturatedFattyAcidsGram,
                 BigDecimal transFattyAcidsGram) {
