@@ -1,0 +1,2 @@
+### 음식검색
+GET http://localhost:8080/food?searchWord=라면
