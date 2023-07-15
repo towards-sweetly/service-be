@@ -13,6 +13,7 @@ import java.util.Optional;
 import static com.management.servicebe.food.stubs.FoodStub.바나나칩;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertAll;
+import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.when;
 
 
@@ -30,10 +31,10 @@ class FoodQueryServiceTest {
     void findFoodDetail() {
         // given
         long id = 1L;
-        when(foodRepository.findById(id)).thenReturn(Optional.of(바나나칩));
+        given(foodRepository.findById(id)).willReturn(Optional.of(바나나칩));
 
         // when
-        FoodDetailResponse 음식_상세_정보 = foodQueryService.findFoodDetail(id);
+        var 음식_상세_정보 = foodQueryService.findFoodDetail(id);
 
         // then
         assertAll(
