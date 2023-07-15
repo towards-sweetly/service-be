@@ -1,4 +1,4 @@
-package com.management.servicebe.food.dto;
+package com.management.servicebe.food.ui.response;
 
 import com.management.servicebe.food.domain.Category;
 import com.management.servicebe.food.domain.Food;

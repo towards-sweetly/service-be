@@ -1,7 +1,7 @@
 package com.management.servicebe.food.application;
 
 import com.management.servicebe.dto.FoodDto;
-import com.management.servicebe.food.dto.FoodDetailResponse;
+import com.management.servicebe.food.ui.response.FoodDetailResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

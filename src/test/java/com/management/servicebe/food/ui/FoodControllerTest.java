@@ -1,7 +1,7 @@
 package com.management.servicebe.food.ui;
 
 import com.management.servicebe.food.application.FoodQueryService;
-import com.management.servicebe.food.dto.FoodDetailResponse;
+import com.management.servicebe.food.ui.response.FoodDetailResponse;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
