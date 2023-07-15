@@ -34,6 +34,8 @@ public class InMemoryFoodRepository implements FoodRepository {
                 food.getSugarsGram(), food.getSodiumMilliGram(), food.getCholesterolMilliGram(),
                 food.getSaturatedFattyAcidsGram(), food.getTransFattyAcidsGram());
 
-        return storage.put(newFood.getId(), newFood);
+        storage.put(newFood.getId(), newFood);
+
+        return newFood;
     }
 }
