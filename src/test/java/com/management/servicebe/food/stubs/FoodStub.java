@@ -13,6 +13,7 @@ public class FoodStub {
             .caloriesKcal(BigDecimal.valueOf(49.5))
             .carbohydratesGram(BigDecimal.valueOf(5.4))
             .proteinGram(BigDecimal.valueOf(0.3))
+            .fatGram(BigDecimal.valueOf(4.0))
             .sugarsGram(BigDecimal.valueOf(3.3))
             .sodiumMilliGram(BigDecimal.valueOf(0.6))
             .cholesterolMilliGram(BigDecimal.ZERO)

@@ -22,6 +22,7 @@ class FoodTest {
         var calories = BigDecimal.valueOf(49.5);
         var carbohydrates = BigDecimal.valueOf(5.4);
         var protein = BigDecimal.valueOf(0.3);
+        var fat = BigDecimal.valueOf(4);
         var sugar = BigDecimal.valueOf(3.3);
         var sodium = BigDecimal.valueOf(0.6);
         var saturatedFattyAcidsG = BigDecimal.valueOf(2.7);
@@ -36,6 +37,7 @@ class FoodTest {
                 .caloriesKcal(calories)
                 .carbohydratesGram(carbohydrates)
                 .proteinGram(protein)
+                .fatGram(fat)
                 .sugarsGram(sugar)
                 .sodiumMilliGram(sodium)
                 .cholesterolMilliGram(cholesterol)
@@ -51,6 +53,7 @@ class FoodTest {
                 () -> assertThat(바나나칩.getCaloriesKcal()).isEqualTo(calories),
                 () -> assertThat(바나나칩.getCarbohydratesGram()).isEqualTo(carbohydrates),
                 () -> assertThat(바나나칩.getProteinGram()).isEqualTo(protein),
+                () -> assertThat(바나나칩.getFatGram()).isEqualTo(fat),
                 () -> assertThat(바나나칩.getSugarsGram()).isEqualTo(sugar),
                 () -> assertThat(바나나칩.getSodiumMilliGram()).isEqualTo(sodium),
                 () -> assertThat(바나나칩.getCholesterolMilliGram()).isEqualTo(cholesterol),

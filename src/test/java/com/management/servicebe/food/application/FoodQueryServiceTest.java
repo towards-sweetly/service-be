@@ -44,6 +44,7 @@ class FoodQueryServiceTest {
                 () -> assertThat(음식_상세_정보.caloriesKcal()).isEqualTo(바나나칩.getCaloriesKcal()),
                 () -> assertThat(음식_상세_정보.carbohydratesGram()).isEqualTo(바나나칩.getCarbohydratesGram()),
                 () -> assertThat(음식_상세_정보.proteinGram()).isEqualTo(바나나칩.getProteinGram()),
+                () -> assertThat(음식_상세_정보.fatGram()).isEqualTo(바나나칩.getFatGram()),
                 () -> assertThat(음식_상세_정보.sugarsGram()).isEqualTo(바나나칩.getSugarsGram()),
                 () -> assertThat(음식_상세_정보.sodiumMilliGram()).isEqualTo(바나나칩.getSodiumMilliGram()),
                 () -> assertThat(음식_상세_정보.cholesterolMilliGram()).isEqualTo(바나나칩.getCholesterolMilliGram()),
