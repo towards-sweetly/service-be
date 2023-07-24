@@ -13,12 +13,11 @@ public class SearchRestController {
 
     private final SearchFoodService searchFoodService;
 
-    @GetMapping("/food")
+    @GetMapping("/foods")
     public SearchResponseDto searchFood(
             @RequestParam String searchWord
     ) {
 
-        //todo 페이지 정보(현황) 추가될 수 있다.
         return new SearchResponseDto(searchFoodService.searchFoods(searchWord));
     }
 }

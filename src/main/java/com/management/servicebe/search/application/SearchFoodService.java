@@ -8,8 +8,6 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.List;
 
-//todo 해당 클래스의 역할이 단순 위임인게 조금 아쉬운데 나중에 해당 의존을 스킵하던지(SearchController -> FoodService) 유지하던지 한다.
-
 @RequiredArgsConstructor
 @Service
 public class SearchFoodService {
